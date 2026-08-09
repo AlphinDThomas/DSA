@@ -7,4 +7,4 @@ class Solution:
                 return num
             visited[num] = True
 
-        return -1
+        
