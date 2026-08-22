@@ -12,6 +12,4 @@ class Solution:
 
         n = int(n)
 
-        if n%total == 0:
-            return True
-        return False
+        return n%total == 0
