@@ -1,7 +1,7 @@
 class Solution:
     def minPartitions(self, n: str) -> int:
         
-        res = []
+        maxele = -1
         for i in n:
-            res.append(int(i))
-        return max(res)
+            maxele = max(maxele,int(i))
+        return maxele
