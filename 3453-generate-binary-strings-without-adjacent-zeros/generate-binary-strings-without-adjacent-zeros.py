@@ -13,7 +13,7 @@ class Solution:
 
         res = []
         i=0
-        while True:
+        for i in range(2**n):
             bi = binarygen(i).zfill(target)
             bi = str(bi)
             if len(bi) == target:
@@ -23,10 +23,5 @@ class Solution:
                         flag = 1
                 if flag == 0:
                     res.append(bi)
-                i+=1
-            elif len(bi)>target:
-                break
-            else:
-                i+=1
-        print(res)
+                
         return res
