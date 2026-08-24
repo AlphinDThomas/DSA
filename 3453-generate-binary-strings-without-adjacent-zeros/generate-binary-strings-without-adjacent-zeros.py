@@ -2,7 +2,7 @@ class Solution:
     def validStrings(self, n: int) -> List[str]:
         if n == 1:
             return ["0","1"]
-        target = n
+        
         def binarygen(n):
             binary= ""
             while n>0:
@@ -14,9 +14,9 @@ class Solution:
         res = []
         i=0
         for i in range(2**n):
-            bi = binarygen(i).zfill(target)
-            bi = str(bi)
-            if len(bi) == target:
+            bi = binarygen(i).zfill(n)
+
+            if len(bi) == n:
                 flag = 0
                 for j in range(len(bi)-1):
                     if bi[j] == "0" and bi[j+1]== "0":
