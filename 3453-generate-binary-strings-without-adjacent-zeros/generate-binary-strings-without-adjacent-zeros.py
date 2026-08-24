@@ -15,13 +15,11 @@ class Solution:
         i=0
         for i in range(2**n):
             bi = binarygen(i).zfill(n)
-
-            if len(bi) == n:
-                flag = 0
-                for j in range(len(bi)-1):
-                    if bi[j] == "0" and bi[j+1]== "0":
-                        flag = 1
-                if flag == 0:
-                    res.append(bi)
+            flag = 0
+            for j in range(len(bi)-1):
+                if bi[j] == "0" and bi[j+1]== "0":
+                    flag = 1
+            if flag == 0:
+               res.append(bi)
                 
         return res
