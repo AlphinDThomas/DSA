@@ -23,7 +23,18 @@ class Solution:
         def checker(root,count):
             if not root:
                 return
-           
+            elif root.right and not root.left:
+                if count == height:
+                    res.append(root.val)
+                elif count<height:
+                    count+=1
+                    checker(root.right,count)
+            elif root.left and not root.right:
+                if count == height:
+                    res.append(root.val)
+                elif count<height:
+                    count+=1
+                    checker(root.left,count)
             else:
                 if count == height:
                     res.append(root.val)
