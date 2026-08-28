@@ -16,7 +16,7 @@ class Solution:
                     survived = False
                     break
                 
-                else:
+                elif stack[-1]>abs(ast):
                     survived = False
                     break
                 
