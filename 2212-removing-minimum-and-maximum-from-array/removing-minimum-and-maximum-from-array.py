@@ -19,8 +19,8 @@ class Solution:
 
         #frombothsides
 
-        leftnaduth = min(indexofmax,indexofmini)
-        rightnaduth = max(indexofmax,indexofmini)
+        leftnaduth = valuthfromright
+        rightnaduth = valuthfromleft
 
         bothsidetotal = (leftnaduth+1)+ (len(nums)-rightnaduth)
 
