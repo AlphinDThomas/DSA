@@ -8,5 +8,6 @@ class Solution:
         if n>9999 and n<100000:
             return n-10000 + 1 + 9000
         if n==100000:
-            return 2 + 9000+ 89999
-            
+            return 1 + 9000+ 90000
+
+                    
