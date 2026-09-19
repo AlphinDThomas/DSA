@@ -5,6 +5,7 @@ class Solution:
         closestY = max(y1,min(y2,yCenter))
 
         distance = (closestX-xCenter)**2 + (closestY-yCenter)**2
-        if distance<=radius**2:
+        dist = sqrt(distance)
+        if dist<=radius:
             return True
         return False
